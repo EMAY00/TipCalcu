@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<LinearLayout
+		android:orientation="horizontal"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/linearLayout1">
+		<TextView
+			android:text="Amount:"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="91.0dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/textView2"
+			android:layout_marginRight="0.0dp" />
+		<android.support.design.widget.TextInputEditText
+			android:layout_width="181.0dp"
+			android:layout_height="41.0dp"
+			android:id="@+id/textInputEditText1"
+			android:layout_toRightOf="@id/linearLayout1" />
+	</LinearLayout>
+	<TextView
+		android:text="Tip size % :"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView1"
+		android:layout_below="@id/linearLayout1" />
+	<SeekBar
+		android:layout_width="158.0dp"
+		android:layout_height="33.0dp"
+		android:id="@+id/seekBar1"
+		android:layout_toRightOf="@id/textView1"
+		android:layout_below="@id/linearLayout1" />
+	<LinearLayout
+		android:orientation="horizontal"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/textView1"
+		android:id="@+id/linearLayout2">
+		<TextView
+			android:text="Tip Value:  "
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/textView1"
+			android:id="@+id/textView3"
+			android:layout_marginRight="1.0dp" />
+		<TextView
+			android:text=""
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:id="@+id/textView4"/>
+	</LinearLayout>
+	<TextView
+		android:text="Total amount: "
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="wrap_content"
+		android:layout_height="45.0dp"
+		android:layout_below="@id/linearLayout2"
+		android:id="@+id/textView3"
+		android:layout_marginBottom="0.0dp" />
+	<TextView
+		android:text=""
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView5"
+		android:layout_toRightOf="@id/textView3"
+		android:layout_below="@id/textView3"
+		android:layout_marginBottom="0.0dp" />
+</RelativeLayout>
